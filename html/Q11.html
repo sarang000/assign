@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Example</title>
+</head>
+<body>
+	<h3>Drinks</h3>
+	<ul id=list>
+		<li>pepsi</li><br>
+		<li>coke</li><br>
+		<li>mirinda</li>
+	</ul>
+      <script>
+		let listItems = document.querySelectorAll("#list li");
+
+		for (var i = 0; i < listItems.length; i++) {
+			listItems[i].addEventListener("click", function() {
+				alert("You clicked on " + this.textContent);
+			});
+		}
+	</script>
+</body>
+</html>

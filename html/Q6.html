@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Q6</title>
+  </head>
+  <body>
+    <p id="output">something something</p>
+    <button id="Button">Click me</button>
+    
+    <script>
+      const button = document.getElementById("Button");
+      let i=0;
+      button.addEventListener("click", function() {
+        let body = document.getElementsByTagName("body")[0];
+        
+        if (i===0) {
+            body.style.backgroundColor = "lightgray";
+            i=1;
+        } else {
+            body.style.backgroundColor = "white"; 
+            i=0;
+        }
+      });
+    </script>
+  </body>
+</html>

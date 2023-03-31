@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Example</title>
+  </head>
+  <body>
+    <h1>Select an item:</h1>
+
+    <ul>
+      <li onclick="selectItem(this)">Item 1</li>
+      <li onclick="selectItem(this)">Item 2</li>
+      <li onclick="selectItem(this)">Item 3</li>
+      <li onclick="selectItem(this)">Item 4</li>
+    </ul>
+
+
+    <script>
+      function selectItem(item) {
+        var items = document.getElementsByTagName("li");
+        
+        alert(items);
+      }
+
+    </script>
+  </body>
+</html>
