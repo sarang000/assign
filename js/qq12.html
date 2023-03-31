@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Charity Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+nav {
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	color: #333;
+	display: block;
+	padding: 
+</style>
+	<header>
+		<h1>Donate to Charity</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#donate">Donate Now</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>We are a non-profit organization dedicated to helping those in need. Our mission is to provide food, shelter, and education to children and families in poverty around the world.</p>
+			<p>Through the generous donations of our supporters, we have been able to make a difference in the lives of countless people. We are committed to continuing our work and making an even bigger impact in the future.</p>
+		</section>
+		<section id="donate">
+			<h2>Donate Now</h2>
+			<p>Your donation can make a difference in the lives of those in need. Please consider making a donation today.</p>
+			<form>
+				<label for="amount">Donation Amount:</label>
+				<input type="number" id="amount" name="amount" min="1" required>
+				<br>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<br>
+				<input type="submit" value="Donate Now" onclick="donate()">
+			</form>
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>If you have any questions or comments, please feel free to contact us using the form below.</p>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<br>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<br>
+				<input type="submit" value="Send Message" onclick="sendMessage()">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Charity Page</p>
+	</footer>
+</body>
+</html>

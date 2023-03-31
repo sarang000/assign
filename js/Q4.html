@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Q4</title>
+  </head>
+  <body>
+    <p id="output">Click the button.</p>
+    <button id="Button">Click me</button><br>
+    <button onclick="but()">alert</button>
+    <script>
+      const button = document.getElementById("Button");
+      const output = document.getElementById("output");
+      
+      button.addEventListener("click", function() {
+        output.innerHTML = "The button was clicked!";
+      });
+       function but()
+            {
+              alert("clicked");
+             }
+    </script>
+  </body>
+</html>
