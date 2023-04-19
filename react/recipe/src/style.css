@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-photo/top-view-fresh-vegetables-various-spices-small-bowls-wooden-spoons-table-free-space_140725-147473.jpg?w=900&t=st=1678358393~exp=1678358993~hmac=e4d6fdaff572c4c505da5dfc3d107c46922e7c68dfb83e094bb4a9da4204366a');
+    background-size:auto;
+    background-repeat: repeat;
+  }
+  
+  .App {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .recipe-calories {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .recipe-ingredients {
+    font-size: 16px;
+    text-align: left;
+  }
+  

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://bestanimations.com/media/sky/874544998aurora-borealis-northern-light-gif-1.gif);
+  background-repeat: repeat;
+  background-size: 100% ;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+button[type="submit"] {
+  background-color: #008cba;
+  color: #f0f4f5;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #6068699f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+li span {
+  flex-grow: 1;
+}
+button {
+  background-color: #4fd978;
+  color: #0b5b32;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+h1{
+  color: white;
+  font-style: cursive;
+} 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
