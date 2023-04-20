@@ -1,0 +1,46 @@
+<html>
+<body bgcolor="white">
+{% include "index.html" %}
+<h1 align="center">Company Officals</h1>
+<form action="/companyofficalsreg/" method="post">
+    {% csrf_token %}
+    {% load staticfiles%}
+<link href="{% static 'css/admincss.css' %}" rel="stylesheet">
+
+<form action="action_page.php">
+  <div class="imgcontainer">
+      {% load staticfiles %}
+    <img src="download.jpg" alt="Company Officals" class="Company Officals">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username Id </b></label>
+    <input type="text" placeholder="Enter Username Id" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="Branch id"><b>Branch Id</b></label>
+      <select name="Branch id">
+          <option>Select</option>
+          <option>101</option>
+          <option>102</option>
+          <option>103</option>
+          <option>104</option>
+          <option>105</option>
+          <option>106</option>
+      </select>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</form>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</body>
+</html>

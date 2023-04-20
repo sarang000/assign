@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transfer Funds</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		form {
+			background-color: #ffffff;
+			border: 1px solid #dddddd;
+			padding: 20px;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		input[type=text], input[type=number], select {
+			display: block;
+			margin: 10px 0;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #cccccc;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		input[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+
+		.error {
+			color: red;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Transfer Funds</h1>
+	<form id="transfer-form" action="" method="post">
+		<label for="from-account">From Account:</label>
+		<select id="from-account" name="from-account">
+			<option value="checking">Checking Account</option>
+			<option value="savings">Savings Account</option>
+		</select>
+
+		<label for="to-account">To Account:</label>
+		<div>
+			<label for="account-number">Account Number:</label>
+            <input type="number" id="account-number" name="account-number">
+
+            <label for="ifsc-code">IFSC Code:</label>
+<input type="text" id="ifsc-code" name="ifsc-code" placeholder="Enter IFSC code" pattern="[A-Z]{4}[0-9]{7}" required>
+
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch">
+        </div>
+
+		<label for="amount">Amount:</label>
+		<input type="number" id="amount" name="amount" min="0">
+
+		<input type="submit" value="Transfer">
+		<p id="transfer-error" class="error"></p>
+	</form>
+
+	<script>
+		const transferForm = document.getElementById("transfer-form");
+		const transferError = document.getElementById("transfer-error");
+
+		transferForm.addEventListener("submit", function(event) {
+			event.preventDefault();
+			const fromAccount = document.getElementById("from-account").value;
+			const toAccount = document.getElementById("to-account").value;
+			const amount = document.getElementById("amount").value;
+
+			// perform transfer validation
+			if (amount <= 0) {
+				alert("Amount must be greater than 0.");
+			} else if (amount > 5000) {
+				alert("Amount cannot exceed 5000.");
+			} else {
+				// perform transfer and update balance information
+				// code goes here
+				alert("Transfer successful!");
+			}
+		});
+	</script>
+</body>
+</html>
